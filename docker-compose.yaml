@@ -9,6 +9,6 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: Drive
+      POSTGRES_DB: knowledge_map
     ports:
       - '5432:5432'

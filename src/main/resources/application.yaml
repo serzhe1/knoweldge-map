@@ -1,2 +1,33 @@
+#server settings
 server:
   port: 8090
+
+#spring settings
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/knowledge_map
+    username: postgres
+    password: postgres
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+
+logging:
+  level:
+    ru:
+      serzhe1: debug
+    org:
+      hibernate:
+        sql: debug
+        type:
+          descriptor:
+            sql:
+              BasicBinder: trace
+    root: debug
+#swagger
+springdoc:
+  swagger-ui:
+    path: /swagger-ui
