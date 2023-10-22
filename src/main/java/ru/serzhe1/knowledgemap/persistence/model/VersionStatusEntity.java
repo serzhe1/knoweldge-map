@@ -11,6 +11,6 @@ public class VersionStatusEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     protected Long id;
-    private String code;
     private String name;
+    private String code;
 }

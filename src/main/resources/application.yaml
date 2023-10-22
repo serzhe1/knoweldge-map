@@ -4,6 +4,8 @@ server:
 
 #spring settings
 spring:
+  main:
+    allow-circular-references: true
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/knowledge_map
@@ -26,7 +28,7 @@ logging:
           descriptor:
             sql:
               BasicBinder: trace
-    root: debug
+#    root: debug
 #swagger
 springdoc:
   swagger-ui:

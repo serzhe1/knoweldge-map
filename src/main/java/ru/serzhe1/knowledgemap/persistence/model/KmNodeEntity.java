@@ -2,6 +2,7 @@ package ru.serzhe1.knowledgemap.persistence.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.sql.Timestamp;
 
@@ -9,6 +10,7 @@ import java.sql.Timestamp;
 @Entity
 @Table(name = "map")
 @Data
+@EqualsAndHashCode
 public class KmNodeEntity {
     @Id
     @SequenceGenerator(name = "map_seq", sequenceName = " map_seq ")
