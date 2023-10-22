@@ -13,9 +13,10 @@ spring:
     password: postgres
   jpa:
     show-sql: true
-    hibernate:
-      ddl-auto: update
-
+    properties:
+      hibernate:
+        jdbc:
+          batch_size: 50
 
 logging:
   level:
