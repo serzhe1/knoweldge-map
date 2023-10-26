@@ -13,7 +13,7 @@ import java.sql.Timestamp;
 @EqualsAndHashCode
 public class KmNodeEntity {
     @Id
-    @SequenceGenerator(name = "map_seq", sequenceName = " map_seq ")
+    @SequenceGenerator(name = "map_seq", sequenceName = "map_seq")
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "map_seq")
     @Column(name = "id", nullable = false)
     private Long id;
